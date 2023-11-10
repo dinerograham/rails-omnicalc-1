@@ -6,7 +6,7 @@ class SquareController < ApplicationController
 
   def square_this
     @number = params.fetch("root").to_f
-    @square = @number**2
+    @squared = @number**2
     render({:template => "square_templates/square_results"})
   end
 
